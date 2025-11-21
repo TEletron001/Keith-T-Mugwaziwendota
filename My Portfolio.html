@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith T. Mugwaziwendota Portfolio</title>
+    <link rel="icon" type="image/png" href="TEletron.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="flex items-center text-2xl font-bold text-white">
+                <img src="TEletron.png" alt="Logo" class="h-8 w-8 rounded-full mr-3" />
+            </a>
+            <h3 class="text-2xl font-bold mb-4">Keith T. Mugwaziwendota</h3>
+        
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <!-- theme toggle -->
+                <input type="checkbox" id="theme-toggle" aria-hidden="true" />
+                <label for="theme-toggle" id="theme-toggle-label" role="switch" tabindex="0" aria-checked="false" aria-label="Toggle dark mode"></label>
+            </div>
+             <div class="hamburger" id="hamburger">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+             </div>
+         </div>
+         <!-- Mobile Menu (hidden by default) -->
+         <div class="mobile-menu" id="mobileMenu">
+             <a href="#home">Home</a>
+             <a href="#about">About</a>
+             <a href="#services">Services</a>
+             <a href="#projects">Projects</a>
+             <a href="#contact">Contact</a>
+             <!-- theme toggle -->
+             <input type="checkbox" id="theme-toggle-mobile" aria-hidden="true" />
+             <label for="theme-toggle-mobile" id="theme-toggle-label-mobile" role="switch" tabindex="0" aria-checked="false" aria-label="Toggle dark mode"></label>
+         </div>
+     </nav>
+
+    <header id="home" class="header-bg">
+        <div class="container">
+            <h1 class="text-5xl font-extrabold mb-4">Keith T. Mugwaziwendota</h1>
+            <p class="text-xl font-light mb-2">Futurist</p>
+            <p class="text-lg mt-2">Connecting the World, One Innovation at a Time.</p>
+        </div>
+    </header>
+
+    <main class="container -mt-20 relative z-20">
+        <div class="flex flex-col items-center mb-12">
+            <!-- User's image from the prompt -->
+            <img src="TEletron.png" alt="Your Profile Picture" class="profile-img">
+            <a href="KEITH T MUGWAZIWENDOTA - CURRICULUM VITAE.pdf" download class="btn-primary mt-6">Download CV</a>
+            <a href="Keith Tatenda Mugwaziwendota Resume.pdf" download class="btn-primary mt-6">Download Resume</a>
+        </div>
+        <!-- About Me Section -->
+        <section id="about" class="card">
+            <h2 class="section-heading">About Me</h2>
+            <p class="text-lg text-gray-700 mb-4">
+                 I am a Telecommunications Graduate Engineer specialising in network design and infrastructure. I have hands-on experience in designing and implementing network solutions, monitoring performance, managing security protocols, and configuring devices such as Sophos and Cisco routers, switches, and firewalls.
+
+            </p>
+            <p class="text-lg text-gray-600 mb-4">
+                I offer a broad range of ICT services, including CCTV installation, website development, home and SME network consultation and installations and tech project prototyping. I am proficient in Python, C++, HTML, JavaScript and CSS, and I work comfortably with tools such as Visual Studio Code, Proteus, EasyEDA, Cisco Packet Tracer, Advanced Design System (ADS), and Arduino IDE.
+            </p>
+            
+            <p class="text-lg text-gray-700">
+                My work is driven by a passion for creating practical, impactful solutions. I strive to leverage technology to improve connectivity and accessibility, while continually growing and contributing meaningful innovations.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="card">
+            <h2 class="section-heading">My Services</h2>
+            <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="service-item">
+                    <img src="CCTV.jpeg" alt="CCTV Installation" class="item-image">
+                    <h3>CCTV Installation</h3>
+                    <p class="text-gray-600 text-sm">
+                        Professional installation and setup of CCTV surveillance systems for homes and businesses, ensuring optimal security and monitoring.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <img src="Web Designing.jpg" alt="Website Designing" class="item-image">
+                    <h3>Website Designing</h3>
+                    <p class="text-gray-600 text-sm">
+                        Crafting modern, responsive, and user-friendly websites tailored to your personal or business needs.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <img src="Home Network.jpg" alt="Home & SMEs Network Consultant" class="item-image">
+                    <h3>Home & SMEs Network Consultant</h3>
+                    <p class="text-gray-600 text-sm">
+                        Expert consultation, design, and troubleshooting of home and small business (SMEs) networks, including Wi-Fi optimization, security, and scalable solutions for reliable connectivity.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <img src="Projects.png" alt="Tech Projects Prototyping" class="item-image">
+                    <h3>Tech Projects Prototyping</h3>
+                    <p class="text-gray-600 text-sm">
+                        Assisting with the development and prototyping of innovative technology projects from concept to a working model.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="card">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <img src="Voting System.jpg" alt="Electronic Voting System Project" class="item-image">
+                    <h3>Fingerprint Electronic Voting System</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        Developed a secure and user-friendly electronic voting system using Arduino Uno, designed to ensure transparency and accuracy in the voting process for small-scale elections.
+                    </p>
+                    <p hidden class="text-xs text-gray-500">
+                        Technologies: Arduino Uno, C/C++, LCD Display. Fingerprint Sensor
+                    </p>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <img src="Smart Assistant.png" alt="AI Wearable Assistive System Project" class="item-image">
+                    <h3>AI Wearable Assistive System</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        Designed an artificial intelligence-powered wearable assistive system to enhance navigation and accessibility for individuals with visual impairment, utilizing real-time object detection and voice feedback.
+                    </p>
+                    <p hidden class="text-xs text-gray-500">
+                         Technologies: Raspberry Pi 4, Python, OpenCV, TensorFlow, Audio Output
+                    </p>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <img src="Rectenna.png" alt="Rectangular Insert-Feed Rectenna Project" class="item-image">
+                    <h3>Rectangular Insert-Feed Rectenna</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        Designed and fabricated a rectangular insert-feed rectenna system for efficient radio frequency energy harvesting at 5 GHz, enabling wireless power transfer for low-power devices.
+                    </p>
+                    <p hidden class="text-xs text-gray-500">
+                        Technologies: Advanced Design System, PCB Fabrication, VNA Lite
+                    </p>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-item">
+                    <img src="Home Automation.jpg" alt="IoT Smart Home Automation Project" class="item-image">
+                    <h3>IoT-based Smart Home Automation System</h3>
+                    <p class="text-gray-600 text-sm mb-2">
+                        Developed an IoT system for smart home automation, enabling remote control of home appliances via a website.
+                    </p>
+                    <p hidden class="text-xs text-gray-500">
+                        Technologies: ESP32, and MQTT, HTML/CSS, JavaScript
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Details Section -->
+        <section id="contact" class="card flex flex-col items-center justify-center">
+            <h2 class="section-heading">Contact Me</h2>
+            <div class="contact-info text-lg grid grid-cols-1 md:grid-cols-2 gap-4 justify-center">
+                <p>
+                    <img src="Email.png" alt="Email Icon" class="h-6 w-6 mr-3 inline-block" />
+                    <a href="mailto:ktmgwazy@gmail.com" class="text-blue-600 hover:underline">ktmgwazy@gmail.com</a>
+                </p>
+                <p>
+                    <img src="Calling.jpeg" alt="Phone Icon" class="h-6 w-6 mr-3 inline-block" />
+                    <a href="tel:+263788025819" class="text-blue-600 hover:underline"> +263 788 025 819</a>
+                </p>
+                <p>
+                    <img src="WhatsApp.jpeg" alt="WhatsApp Icon" class="h-6 w-6 mr-3 inline-block" />
+                    <a href="https://wa.me/+263788025819" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Contact Me On WhatsApp</a>
+                </p>
+                <p>
+                    <img src="Telegram.png" alt="Telegram Icon" class="h-6 w-6 mr-3 inline-block" />
+                    <a href="https://t.me/TEletron001" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Contact Me On Telegram</a>
+                </p>
+                <p>
+                    <img src="Location.jpeg" alt="Location Icon" class="h-6 w-6 mr-3 inline-block" />
+                    Masvingo, Zimbabwe
+                </p>
+                <p>
+                    <img src="LinkedIn.png" alt="LinkedIn Icon" class="h-6 w-6 mr-3 inline-block" />
+                    <a href="https://linkedin.com/in/keithteletron" target="_blank" rel="noopener" class="text-blue-600 hover:underline">LinkedIn Profile</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6 mt-8 rounded-t-2xl">
+        <p>&copy; 2025 Keith TEletron. All rights reserved.</p>
+        <p class="text-sm mt-2">Inspired By Technology.</p>
+    </footer>
+
+    <script>
+        // JavaScript for responsive navigation (hamburger menu) + theme + active nav on scroll
+        (function() {
+            // hamburger
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            if (hamburger) hamburger.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+            document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('active')));
+
+            // theme toggle
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeLabel = document.getElementById('theme-toggle-label');
+            const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+            const themeLabelMobile = document.getElementById('theme-toggle-label-mobile');
+            const root = document.documentElement;
+            const body = document.body;
+            const KEY = 'theme';
+
+            function applyTheme(theme) {
+                const isDark = theme === 'dark';
+                root.classList.toggle('dark', isDark);
+                body.classList.toggle('dark-mode', isDark);
+                if (themeToggle) themeToggle.checked = isDark;
+                if (themeLabel) {
+                    themeLabel.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+                    themeLabel.setAttribute('aria-checked', isDark ? 'true' : 'false');
+                }
+                if (themeToggleMobile) themeToggleMobile.checked = isDark;
+                if (themeLabelMobile) {
+                    themeLabelMobile.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+                    themeLabelMobile.setAttribute('aria-checked', isDark ? 'true' : 'false');
+                }
+            }
+
+            const saved = localStorage.getItem(KEY);
+            if (saved === 'dark' || saved === 'light') applyTheme(saved);
+            else {
+                const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                applyTheme(prefersDark ? 'dark' : 'light');
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('change', () => {
+                    const next = themeToggle.checked ? 'dark' : 'light';
+                    applyTheme(next);
+                    localStorage.setItem(KEY, next);
+                });
+            }
+            if (themeLabel && themeToggle) {
+                themeLabel.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        themeToggle.click();
+                    }
+                });
+            }
+            if (themeToggleMobile) {
+                themeToggleMobile.addEventListener('change', () => {
+                    const next = themeToggleMobile.checked ? 'dark' : 'light';
+                    applyTheme(next);
+                    localStorage.setItem(KEY, next);
+                });
+            }
+            if (themeLabelMobile && themeToggleMobile) {
+                themeLabelMobile.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        themeToggleMobile.click();
+                    }
+                });
+            }
+
+            // active nav link while scrolling (IntersectionObserver)
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('header[id], main section[id]');
+            function setActive(id) {
+                navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+            }
+            if ('IntersectionObserver' in window && sections.length) {
+                const obs = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.target.id) setActive(entry.target.id);
+                    });
+                }, { threshold: 0.45 });
+                sections.forEach(s => obs.observe(s));
+            } else {
+                // fallback: on scroll compute nearest section
+                const byId = Array.from(sections).map(s => s.id);
+                window.addEventListener('scroll', () => {
+                    const y = window.scrollY + window.innerHeight * 0.4;
+                    let current = byId[0];
+                    for (const id of byId) {
+                        const el = document.getElementById(id);
+                        if (el && el.offsetTop <= y) current = id;
+                    }
+                    setActive(current);
+                }, { passive: true });
+            }
+
+            // close mobile menu on nav click and smooth scroll
+            navLinks.forEach(a => {
+                a.addEventListener('click', (e) => {
+                    // smooth scroll behavior
+                    e.preventDefault();
+                    const target = document.querySelector(a.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    if (mobileMenu) mobileMenu.classList.remove('active');
+                });
+            });
+        })();
+     </script>
+ </body>
+ </html>
